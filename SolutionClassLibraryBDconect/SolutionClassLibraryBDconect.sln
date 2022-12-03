@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppLoginESERI", "WinFormsAppLoginESERI\WinFormsAppLoginESERI.csproj", "{AD4D7D0C-490C-4B9F-87F1-6845CC933495}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryBDconect", "SolutionClassLibraryBDconect\ClassLibraryBDconect\ClassLibraryBDconect.csproj", "{E87D79B3-8FE1-492E-89ED-0066DF8AA50E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryBDconect", "ClassLibraryBDconect\ClassLibraryBDconect.csproj", "{E87D79B3-8FE1-492E-89ED-0066DF8AA50E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AD4D7D0C-490C-4B9F-87F1-6845CC933495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD4D7D0C-490C-4B9F-87F1-6845CC933495}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD4D7D0C-490C-4B9F-87F1-6845CC933495}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD4D7D0C-490C-4B9F-87F1-6845CC933495}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E87D79B3-8FE1-492E-89ED-0066DF8AA50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E87D79B3-8FE1-492E-89ED-0066DF8AA50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E87D79B3-8FE1-492E-89ED-0066DF8AA50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CD387CDE-BC4F-477A-837A-2D080548B0EE}
+		SolutionGuid = {CE99B18C-2571-4E2E-B583-6A5488AC4CC1}
 	EndGlobalSection
 EndGlobal
