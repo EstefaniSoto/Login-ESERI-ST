@@ -16,7 +16,12 @@ namespace WinFormsAppLoginESERI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 splash = new Form1();
+            if(splash.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new MainForm());
+            }
+            
         }
     }
 }

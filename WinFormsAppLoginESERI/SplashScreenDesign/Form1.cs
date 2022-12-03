@@ -12,29 +12,32 @@ namespace WinFormsAppLoginESERI
 {
     public partial class Form1 : Form
     {
-        int i = 1;//Variable inicializada en 1 para crear un contador
+        int i = 1;//Variable inicializada en 1 para crear un contador.
+        /// <summary>
+        /// Metodo para inicializar proyecto y mostrar el SplashScreen
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
+            //Iniciar el timer para que muestre el SplashScreen con intervalos de 7000.
+            SplashTimer.Enabled= true;
+            SplashTimer.Interval = 7000;
         }
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-            SplashTimer.Enabled = true;//Habilitamos el iniciar el contador para que muestre el SplashScreen
-        }
-       
-
+       /// <summary>
+       /// Metodo para detener o dejar de mostrar el SplashScreen
+       /// </summary>
+       /// <param name="sender"></param>
+       /// <param name="e"></param>
         private void SplashTimer_Tick_1(object sender, EventArgs e)
         {
-            i += 1;// Incremento de variable de 1 en 1
-            if (i == 12)//Esta sentencia se ejecutara cuando se evalue como verdadera, es decir, cuando el contador llegue a 12 se ejecutara.
-            {
-                SplashTimer.Enabled = false; //Deshabilitamos el timer
-                this.Hide();//Escondemos el Splash
-                MainForm mainForm = new MainForm();
-                mainForm.Show();//Mostramos el formulario de Login una vez que el SplashScreen termina de ejecutarse
-            }
-        }
+            //Linea para detener el timer una vez que este llegue al tiempo indicado.
+            SplashTimer.Stop();
+            this.DialogResult = DialogResult.OK;
+            //Cerrar Splash.
+            this.Close();
 
+        }
+        
        
     }
 }
