@@ -26,8 +26,7 @@ namespace WinFormsAppLoginESERI
        /// <summary>
        /// Metodo para detener o dejar de mostrar el SplashScreen
        /// </summary>
-       /// <param name="sender"></param>
-       /// <param name="e"></param>
+
         private void SplashTimer_Tick_1(object sender, EventArgs e)
         {
             //Linea para detener el timer una vez que este llegue al tiempo indicado.
